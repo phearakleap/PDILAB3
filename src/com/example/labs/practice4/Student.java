@@ -27,9 +27,6 @@ public class Student {
     public float averageGetter(){
         return this.average;
     }
-    public void scoreSetter(){
-
-    }
     //Honestly just added this to make the code alot easier to read.
     public void calcSumAndAverage(){
         for(float i : this.scores){
