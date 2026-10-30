@@ -1,0 +1,4 @@
+The Account.java is made specifically to have Account obejects and get some important account info. 
+Also makes the main file (BankingSystem.java) alot more readable.
+Banking System just prompts the user with how many users to input (along side account number), then provides
+functionality to deposit, withdraw, view accounts, and exit.
