@@ -7,7 +7,6 @@ import java.util.List;
 public class StudentGrades{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        float[] scores = new float[5];
         String name, ID;
         String[] subject = {"Mathematics", "Physics", "Chemistry", "Biology", "English"};
         int numberOfStudents;
@@ -23,6 +22,7 @@ public class StudentGrades{
             name = sc.nextLine();
             System.out.print("Enter ID: ");
             ID = sc.nextLine();
+            float[] scores = new float[5];
             for(int j = 0; j < 5; j++){
                 System.out.printf("Enter your score for %s: ", subject[j]);
                 scores[j] = sc.nextFloat();
@@ -39,12 +39,12 @@ public class StudentGrades{
             System.out.println("\n===========================================");
             System.out.printf("%s (%s), here are your scores: \n",students.get(i).nameGetter(),students.get(i).IDGetter());
             for(int j = 0; j < 5; j++){
-                System.out.printf("\t%s: %.2f\n", subject[j], scores[j]);
+                System.out.printf("\t%s: %.2f\n", subject[j], students.get(i).scoresGetter(j));
             }
             System.out.printf("\tTotal Marks: %.2f\n", students.get(i).sumGetter());
             System.out.printf("\tAverage: %.2f\n", students.get(i).averageGetter());
             System.out.printf("\tYour letter grade: %c\n", students.get(i).gradeDetermine());
-            System.out.println("================================================");
+            System.out.println("============================================");
         }
         sc.close();
     }
