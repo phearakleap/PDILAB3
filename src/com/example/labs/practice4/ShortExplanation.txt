@@ -1,0 +1,4 @@
+Student.java is a file that contains the Student class to instantiate students.
+StudentGrades.java is the main program that asks for the amount of students, their ID,
+and their marks for each subject. After it does that, it sums, averages, and gives a letter grade to the students
+alongside displaying the marks they previously entered.
