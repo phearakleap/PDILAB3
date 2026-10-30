@@ -20,8 +20,8 @@ public class Account {
         return this.name;
     }
     public void withdraw(float amount){
-        if(this.balance <= 0){
-            System.out.println("bro so poor the ducks feed em bread :crying:");
+        if(amount > this.balance){
+            System.out.println("Withdrawal amount exceeded current balance.");
         } else {
             this.balance -= amount;
             System.out.printf("\nWithdrew %.2f from %s (%s) successfully!\n", amount, this.name, this.accNum);
